@@ -1,5 +1,5 @@
 import React from 'react';
-import MissionsCard from './MissionsCard';
+import MissionCard from './MissionCard';
 import missions from '../data/missions';
 
 class MissionsList extends React.Component {
@@ -7,7 +7,7 @@ class MissionsList extends React.Component {
     return (
       <ul>
         {missions.map((missao) => (
-          <MissionsCard
+          <MissionCard
             name={ missao.name }
             year={ missao.year }
             country={ missao.country }
